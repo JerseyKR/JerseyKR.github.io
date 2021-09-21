@@ -917,6 +917,10 @@ footer{
     margin-bottom: -130px;
 
 }
+@media (max-width: 860px){
+    .booking{
+        margin-bottom: 0px;
+    }
 
 .wrapper{
   padding: 20px 0;
