@@ -459,10 +459,15 @@ body._pc .submenu a:hover {background: #e8e8e8;}
         background-position: 40% 0%;
     }      
 }
-@media (max-width:1370px){
-    .experiment__preview{
-        background-position: 25% 0%;
-    }  
+@media (max-width:500px){
+    .horror__preview{
+        background: url(../images/2_small.png) center/cover no-repeat;   
+        background-position: center;
+    } 
+    .abode__preview{
+        background: url(../images/4_small.png) center/cover no-repeat;   
+        background-position: center;
+    }   
 }
 
 @media (max-width: 860px){
@@ -552,7 +557,7 @@ body._pc .submenu a:hover {background: #e8e8e8;}
     text-decoration: none;
 }
 
-.slider__inner .items:hover img{
+body._pc .slider__inner .items:hover img{
     filter: blur(8px);
 }
 
@@ -562,6 +567,10 @@ body._pc .submenu a:hover {background: #e8e8e8;}
     transition: all linear .4s;
     transform: scale(0.9);
     opacity: 0.5;
+}
+
+.slider__inner .items picture img{
+    width: 100%;
 }
 
 .slider__inner .slick-center img{
@@ -921,6 +930,7 @@ footer{
     .booking{
         margin-bottom: 0px;
     }
+}
 
 .wrapper{
   padding: 20px 0;

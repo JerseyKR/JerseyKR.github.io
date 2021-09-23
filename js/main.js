@@ -78,8 +78,12 @@ $(function () {
 
 
   let header = $('.header');
-
+  
+  if(document.documentElement.clientWidth <= 768){
+    header.addClass('header__fixed');
+  }
   $(window).scroll(function () {
+
     if ($(this).scrollTop() >= 0) {
       header.addClass('header__fixed');
       if ($(this).scrollTop() > 60) {
