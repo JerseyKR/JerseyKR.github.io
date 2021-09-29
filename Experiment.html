@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                         </li>
                         <li><a href="index.html#promotions">Акции</a></li>
                         <li><a href="index.html#certificates">Сертификаты</a></li>
-                        <li><a href="javascript:void(0)" onclick="slowScroll('#location')">Как добраться?</a></li>
+                        <li><a href="javascript:void(0)" onclick="slowScroll('#location')">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="number">
@@ -69,11 +70,11 @@
                             </li>
                             <li><a href="index.html#promotions">Акции</a></li>
                             <li><a href="index.html#certificates">Сертификаты</a></li>
-                            <li><a href="javascript:void(0)" onclick="slowScroll('#location')">Как добраться?</a></li>
+                            <li><a href="javascript:void(0)" onclick="slowScroll('#location')">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="number">
-                        <a href="" class="">8-952-755-4305</a>
+                        <a href="tel: 89527554305" class="">8-952-755-4305</a>
                     </div>
                 </div>
             </div>
@@ -149,6 +150,13 @@
         </div>
     </section>
     <hr>
+    <section class="photos">        
+            <a href="images/Exp_1.jpg" data-lightbox="Experiment"><img src="images/Exp_1.jpg" alt=""></a>
+            <a href="images/Exp_2.jpg" data-lightbox="Experiment"><img src="images/Exp_2.jpg" alt=""></a>
+            <a href="images/Exp_3.jpg" data-lightbox="Experiment"><img src="images/Exp_3.jpg" alt=""></a>
+            <a href="images/Exp_4.jpg" data-lightbox="Experiment"><img src="images/Exp_4.jpg" alt=""></a>
+    </section>
+    <hr>
     <div class="booking" id="booking">
         <iframe frameborder="no" scrolling="yes"
             src="https://xn--b1acdcqi5ci.xn--p1ai/api/smart_widget/5f60cd85755acc7d5b12c93a/redirect"
@@ -158,7 +166,7 @@
     <section id="location" class="location">
         <div class="container">
             <div class="location__top">
-                КАК ДОБРАТЬСЯ?
+                Контакты
             </div>
             <div class="location__content">
                 <div class="location__info">
@@ -217,6 +225,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>

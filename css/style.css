@@ -36,6 +36,11 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+@media(max-width: 768px){
+    body{
+        font-size: 16px;
+    }
+}
 body._lock{
     overflow: hidden;
 }
@@ -453,13 +458,17 @@ body._pc .submenu a:hover {background: #e8e8e8;}
         background-position: 25% 0%;
     }
     .experiment__preview{
-        background-position: 25% 0%;
+        background-position: 23% 0%;
     }     
     .horror__preview{
         background-position: 40% 0%;
     }      
 }
 @media (max-width:500px){
+    .experiment__preview{
+        background: url(../images/1_small.png) center/cover no-repeat;   
+        background-position: center;
+    } 
     .horror__preview{
         background: url(../images/2_small.png) center/cover no-repeat;   
         background-position: center;
@@ -598,11 +607,6 @@ body._pc .slider__inner .items:hover img{
     .slider__inner .horror img{
         object-position: 40% 0;
     }
-    }      
-
-
-.slider__inner .items:hover .sl__slog{
-    display: none;
 }
 
 .sl__zag{
@@ -612,7 +616,7 @@ body._pc .slider__inner .items:hover img{
     opacity: 0;
 }
 
-.slider__inner .items:hover .sl__zag{
+body._pc    .slider__inner .items:hover .sl__zag{
     margin-top: -10px;
     opacity: 1;
 }
@@ -622,7 +626,7 @@ body._pc .slider__inner .items:hover img{
     margin-top: 150px;
     opacity: 0;
 }
-.slider__inner .items:hover .sl__desc{
+body._pc .slider__inner .items:hover .sl__desc{
     margin-top: 10px;
     opacity: 1;
 }
@@ -694,11 +698,12 @@ body._pc .slider__inner .items:hover img{
 
 .promotion__item{
     display: flex;
-    margin-top: 68px;
+    margin-top: 33px;
+    padding-bottom: 20px;
     border-bottom: 2px solid #F6DE00;
 }
 
-.promotion__item:nth-child(3){
+.promotion__item:last-child{
     border-bottom: none;
 }
 
@@ -750,15 +755,20 @@ hr:before {
     border-width: 0 0 2px 0;
     border-radius: 20px;
 }
-
+@media(max-width: 768px){
+    hr{
+      margin-top: 40px;  
+    }
+}
 .location{
     color: #fff;
     margin-bottom: 30px;
 }
 
 .location__top{
-    font-weight: 700;
+    font-size: 32px;
     text-align: center;
+    font-weight: 700;
 }
 
 .location__info-title{
@@ -832,7 +842,11 @@ footer{
     text-align: justify;
     margin-bottom: 40px;
 }
-
+@media(max-width: 768px){
+    .about__quest-text{
+        text-align: center;
+    }
+}
 .about__quest-price{
     margin: 0 auto;
     width: 100%;
@@ -920,10 +934,60 @@ footer{
     color: #fff;
 }
 
+.photos{
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.photos img{
+    object-fit: cover;    
+    width: 260px;
+    height: 180px;
+    margin: 30px 20px -30px 20px;
+    transition: 0.5s;     
+}
+
+body._pc .photos img:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 1214px)
+{
+    .photos img{
+        width: 170px;
+        height: 130px;
+        margin: 40px 15px -17px 15px; 
+    }
+}
+@media (max-width: 814px)
+{
+    .photos img{
+        width: 130px;
+        height: 90px;
+        margin: 30px 10px -15px 10px; 
+    }
+}
+@media (max-width: 615px)
+{
+    .photos img{
+        width: 180px;
+        height: 140px;
+        margin: 40px 15px -17px 15px; 
+    }
+}
+@media (max-width: 425px)
+{
+    .photos img{
+        width: 130px;
+        height: 90px;
+        margin: 30px 10px -15px 10px; 
+    }
+}
+
+
 .booking{
     text-align: center;
-    margin-top: -20px;
-    margin-bottom: -130px;
+    margin-top: 0px;
+    margin-bottom: -100px;
 
 }
 @media (max-width: 860px){
@@ -945,6 +1009,11 @@ footer{
   text-align: justify;
   padding-bottom: 20px;
   
+}
+@media(max-width: 596px){
+    .wrapper p{
+        text-align: center;
+    }
 }
 .counter-up{
   min-height: 50vh;
@@ -1052,7 +1121,7 @@ footer{
 }
 
 .certificates__info ul li {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .certificates__price{
